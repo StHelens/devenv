@@ -8,8 +8,3 @@ devenv:
    - "3000:3000"
   expose:
    - "3000"
-#  shell:
-#    extends: dev
-#    entrypoint: bash
-#    stdin_open: true
-#    tty: true

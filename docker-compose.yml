@@ -1,0 +1,15 @@
+devenv:
+  container_name: nextbox
+  build: .
+#  image: ubuntu
+  volumes:
+   - .:/home
+  ports:
+   - "3000:3000"
+  expose:
+   - "3000"
+#  shell:
+#    extends: dev
+#    entrypoint: bash
+#    stdin_open: true
+#    tty: true

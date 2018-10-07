@@ -1,13 +1,15 @@
 A simple Docker image for portable Next.js development
 
-Clone the repository and build the Dockerfile;
-docker build .
+Clone the repository and build the Dockerfile:
+docker build -t devenv .
 
-Run the container and jump to the prod directory;
-docker-compose run devenv bash
+Run the container with  bash prompt in /home directory:
+docker-compose run --service-ports devenv bash
 
 Open Atom inside the folder for development on your local machine
 
-Inside the prod folder to run the server;
+To run the server (in the containers bash shell):
 npm run dev
-localhost:3000 on your local machine to access hit the frontend
+
+On your local machine to launch the frontend:
+localhost:3000

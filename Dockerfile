@@ -1,4 +1,4 @@
-# docker-compose up --build .
+# docker build -t devenv .
 
 FROM ubuntu:16.04
 LABEL maintainer="garydavies@outlook.com"
@@ -20,8 +20,8 @@ RUN npm i -g n && \
 
 ADD . /home
 
-WORKDIR /home/prod
+WORKDIR /home
 
-RUN npm install
+CMD [ "npm", "install", "--save", "next", "react", "react-dom" ]
 
-CMD ["/bin/bash"]
+CMD [ "npm", "run", "dev" ]

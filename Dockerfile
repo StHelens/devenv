@@ -22,6 +22,8 @@ ADD . /home
 
 WORKDIR /home
 
+CMD [ "npm", "install" ]
+
 CMD [ "npm", "install", "--save", "next", "react", "react-dom" ]
 
 CMD [ "npm", "run", "dev" ]

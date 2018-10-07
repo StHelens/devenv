@@ -1,0 +1,27 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "A basic Docker image for portable Next.js development",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^7.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drillep/devenv.git"
+  },
+  "author": "Gary Davies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drillep/devenv/issues"
+  },
+  "homepage": "https://github.com/drillep/devenv#readme"
+}

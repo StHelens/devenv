@@ -1,10 +1,9 @@
 devenv:
   container_name: nextbox
   build: .
-#  image: ubuntu
   volumes:
    - .:/home
   ports:
-   - "3000:3000"
+   - 3000:3000
   expose:
-   - "3000"
+   - 3000

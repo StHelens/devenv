@@ -22,8 +22,5 @@ ADD . /home
 
 WORKDIR /home
 
+RUN npm install --save next react  react-dom
 CMD [ "npm", "install" ]
-
-CMD [ "npm", "install", "--save", "next", "react", "react-dom" ]
-
-CMD [ "npm", "run", "dev" ]
